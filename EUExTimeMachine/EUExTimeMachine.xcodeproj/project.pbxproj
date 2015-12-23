@@ -14,6 +14,8 @@
 		0354459018B22C3300C2E757 /* StyledPageControl_T.m in Sources */ = {isa = PBXBuildFile; fileRef = 0354458A18B22C3300C2E757 /* StyledPageControl_T.m */; };
 		0354459118B22C3300C2E757 /* UIContainsiCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0354458C18B22C3300C2E757 /* UIContainsiCarouselView.m */; };
 		0354459318B22CA300C2E757 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0354459218B22CA300C2E757 /* UIKit.framework */; };
+		42EE61001C2AA4CF007CFCB4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EE60FE1C2AA4CF007CFCB4 /* 1.png */; };
+		42EE61011C2AA4CF007CFCB4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EE60FF1C2AA4CF007CFCB4 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +55,9 @@
 		0354458B18B22C3300C2E757 /* UIContainsiCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIContainsiCarouselView.h; sourceTree = "<group>"; };
 		0354458C18B22C3300C2E757 /* UIContainsiCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIContainsiCarouselView.m; sourceTree = "<group>"; };
 		0354459218B22CA300C2E757 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42EE60F81C2AA490007CFCB4 /* uexTimeMachine.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexTimeMachine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE60FE1C2AA4CF007CFCB4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		42EE60FF1C2AA4CF007CFCB4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42EE60F51C2AA490007CFCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				0354455118B22B1100C2E757 /* EUExTimeMachine */,
+				42EE60F91C2AA490007CFCB4 /* uexTimeMachineBundle */,
 				0354454E18B22B1100C2E757 /* Frameworks */,
 				0354454D18B22B1100C2E757 /* Products */,
 			);
@@ -81,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0354454C18B22B1100C2E757 /* libuexTimeMachine.a */,
+				42EE60F81C2AA490007CFCB4 /* uexTimeMachine.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +176,15 @@
 			path = ReflectionView;
 			sourceTree = "<group>";
 		};
+		42EE60F91C2AA490007CFCB4 /* uexTimeMachineBundle */ = {
+			isa = PBXGroup;
+			children = (
+				42EE60FE1C2AA4CF007CFCB4 /* 1.png */,
+				42EE60FF1C2AA4CF007CFCB4 /* 2.png */,
+			);
+			path = uexTimeMachineBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +205,23 @@
 			productReference = 0354454C18B22B1100C2E757 /* libuexTimeMachine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		42EE60F71C2AA490007CFCB4 /* uexTimeMachineBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE60FD1C2AA490007CFCB4 /* Build configuration list for PBXNativeTarget "uexTimeMachineBundle" */;
+			buildPhases = (
+				42EE60F41C2AA490007CFCB4 /* Sources */,
+				42EE60F51C2AA490007CFCB4 /* Frameworks */,
+				42EE60F61C2AA490007CFCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexTimeMachineBundle;
+			productName = uexTimeMachineBundle;
+			productReference = 42EE60F81C2AA490007CFCB4 /* uexTimeMachine.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +230,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = zhengcuan;
+				TargetAttributes = {
+					42EE60F71C2AA490007CFCB4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = 0354454718B22B1100C2E757 /* Build configuration list for PBXProject "EUExTimeMachine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -204,9 +249,22 @@
 			projectRoot = "";
 			targets = (
 				0354454B18B22B1100C2E757 /* EUExTimeMachine */,
+				42EE60F71C2AA490007CFCB4 /* uexTimeMachineBundle */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EE60F61C2AA490007CFCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE61011C2AA4CF007CFCB4 /* 2.png in Resources */,
+				42EE61001C2AA4CF007CFCB4 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0354454818B22B1100C2E757 /* Sources */ = {
@@ -218,6 +276,13 @@
 				0354459018B22C3300C2E757 /* StyledPageControl_T.m in Sources */,
 				0354458F18B22C3300C2E757 /* ReflectionView_T.m in Sources */,
 				0354459118B22C3300C2E757 /* UIContainsiCarouselView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42EE60F41C2AA490007CFCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +391,56 @@
 			};
 			name = Release;
 		};
+		42EE60FB1C2AA490007CFCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTimeMachine/;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexTimeMachineBundle;
+				PRODUCT_NAME = uexTimeMachine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42EE60FC1C2AA490007CFCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTimeMachine/;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexTimeMachineBundle;
+				PRODUCT_NAME = uexTimeMachine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -346,6 +461,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42EE60FD1C2AA490007CFCB4 /* Build configuration list for PBXNativeTarget "uexTimeMachineBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE60FB1C2AA490007CFCB4 /* Debug */,
+				42EE60FC1C2AA490007CFCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
